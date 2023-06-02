@@ -12,7 +12,7 @@ function CharactersComponent() {
 		return response.json();
 	};
 
-	const { data, status, isPreviousData, isLoading, isError } = useQuery(
+	const { data, isPreviousData, isLoading, isError } = useQuery(
 		["characters", page],
 		getCharacters,
 		{ keepPreviousData: true }
